@@ -255,7 +255,7 @@ section{
     width: 100%;
 }
 .ccardsmain{
-    height: 450px;
+    height: 1000px;
     padding: 20px;
     background-color: #ebebeb;
     overflow-x: auto;
@@ -274,22 +274,41 @@ section{
     border: #014a36 5px solid;
     background-color: #fff;
     border-radius: 20px;
-    width: 250px;
-    height: 400px;
+    width: 25%;
+    height: 100%;
 }
+
+.ccard2{
+    background-color: #fff;
+    width: 50%;
+}
+
 
 .ccard img{
     border-radius: 15px;
+    width: 100%;
+}
 
-    width: 240px;
-    height: 180px;
+.ccard2 img{
+    width: 100%;
 }
 .ccard h2{
+    text-align: center;
     margin-left: 20px;
     margin-right: 20px;
 }
 .ccard p{
     border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ccard2 h2{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ccard2 p{
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -415,4 +434,37 @@ section{
         font-size: 40px;
     }
 
+}
+
+
+.texto {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.nombre{
+    font-size: 1.2rem;
+}
+
+.col-md-4{
+    align-content: center;
+}
+
+.col-md-2{
+    align-content: center;
+}
+
+#caja{
+    align-content: center;
+}
+
+#boton{
+    color: white;
+    background-color: #014a36;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-weight:800;
+    align-items: center;
 }
