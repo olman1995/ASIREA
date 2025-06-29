@@ -255,7 +255,7 @@ section{
     width: 100%;
 }
 .ccardsmain{
-    height: 450px;
+    height: 825px;
     padding: 20px;
     background-color: #ebebeb;
     overflow-x: auto;
@@ -274,15 +274,13 @@ section{
     border: #014a36 5px solid;
     background-color: #fff;
     border-radius: 20px;
-    width: 250px;
-    height: 400px;
+    width: 25%;
+    height: 99%;
 }
 
 .ccard img{
     border-radius: 15px;
-
-    width: 240px;
-    height: 180px;
+    width: 100%;
 }
 .ccard h2{
     margin-left: 20px;
