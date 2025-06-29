@@ -350,3 +350,25 @@ section{
     }
 
 }
+
+.texto {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.nombre{
+    font-size: 1.2rem;
+}
+
+.col-md-4{
+    align-content: center;
+}
+
+.col-md-2{
+    align-content: center;
+}
+
+#caja{
+    align-content: center;
+}
