@@ -260,8 +260,16 @@ section{
     background-color: #ebebeb;
     overflow-x: auto;
     overflow-y: hidden;
-
 }
+
+.ccardsmain2{
+    height: 500px;
+    padding: 20px;
+    background-color: #ebebeb;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .ccardstitle{
     text-align: center;
 }
@@ -281,6 +289,20 @@ section{
 .ccard2{
     background-color: #fff;
     width: 50%;
+}
+
+
+.ccard3{
+    border: #014a36 5px solid;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 25%;
+    height: 100%;
+}
+
+.ccard3 img{
+    border-radius: 15px;
+    width: 100%;
 }
 
 
@@ -466,5 +488,15 @@ section{
     border-radius: 10px;
     padding: 15px 25px;
     font-weight:800;
-    align-items: center;
+}
+
+#boton:hover {
+    color: black;
+    background-color: #3be6c1;
+}
+
+.portada_img{
+    border-radius: 15px;
+    width: 100%;
+
 }
