@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+
+
+.c1{color: #014a36;}
+.c2{color: #3be6c1;}
+.c3{color: #fa9500;}
+.c4{color: #fadb9c;}
+.c5{color: #ffffff;}
+.c6{color: #000000;}
+.c7{color: #ebebeb;}
+
+.bg1{background-color: #014a36;}
+.bg2{background-color: #3be6c1;}
+.bg3{background-color: #fa9500;}
+.bg4{background-color: #fadb9c;}
+.bg5{background-color: #ffffff;}
+.bg6{background-color: #000000;}
+.bg7{background-color: #ebebeb;}
+
+header {
+    background-color: #014a36;
+    color: #fff !important;
+    padding: 1rem 0; 
+
+   
+    position: fixed !important; 
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+main{
+    margin-top: 70px;
+}
+
+section{
+    margin-top: 20px;
+}
+
+.chead{
+    width: 100%;
+    height: 70px;
+}
+
+.ctitle{
+    padding-top: 10px;
+    display: flex;            
+    justify-content: center;  
+    align-items: center; 
+    height: 50px;
+}
+.ctitle{
+    color: #fff;
+}
+
+.ctitle:hover{
+    color: #fff;
+}
+
+.ctitle:active{
+    color: #fff;
+}
+
+.ctitle:visited{
+    color: #fff;
+}
+.ctitle img {
+    width: 45px;
+    height: 45px;
+}
+.ctitle span{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+
+.cnav{
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 0px;
+    display: flex;
+}
+.cnav li {
+    text-align: center;
+    margin: 0 15px;
+    width: 16%;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) 1;
+
+}
+
+.cfooter{
+    text-align: center;
+
+}
+.cfooter a{
+    color: #fff !important;
+    text-decoration: none;
+
+}
+.cfooter div div div{
+    padding-top: 10px;
+}
+
+.cfootertitle{
+    padding-top: 25px;
+    display: flex;            
+    justify-content: center;  
+    align-items: center; 
+    height: 100px;
+}
+.cfootertitle{
+    color: #fff;
+}
+
+.cfootertitle:hover{
+    color: #fff;
+}
+
+.cfootertitle:active{
+    color: #fff;
+}
+
+.cfootertitle:visited{
+    color: #fff;
+}
+.cfootertitle img {
+    width: 90px;
+    height: 90px;
+}
+.cfootertitle span{
+    font-size: 60px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+
+.cnav li:hover{
+  animation: border_aniamtion 0.25s forwards; 
+
+}
+
+.cnav li[active]{
+  animation: border_aniamtion 0.25s forwards; 
+
+}
+
+@keyframes border_aniamtion {
+    0% {
+        border-bottom: 1px solid transparent; 
+        border-image: linear-gradient(to right, 
+                      rgba(255, 255, 255, 0), 
+                      rgba(255, 255, 255, 0),
+                      rgba(255, 255, 255, 0),
+                      rgba(255, 255, 255, 0),
+                      rgba(255, 255, 255, 0)) 1;
+    }
+    25% {
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, 
+                      rgba(255, 255, 255, 0), 
+                      rgba(255, 255, 255, 0),
+                      rgba(255, 255, 255, 1), 
+                      rgba(255, 255, 255, 0),
+                      rgba(255, 255, 255, 0)) 1;
+    }
+    50% {
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, 
+                      rgba(255, 255, 255, 0), 
+                      rgba(255, 255, 255, 1), 
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 0)) 1;
+    }
+    75% {
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, 
+                      rgba(255, 255, 255, 0.5),
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 0.5)) 1;
+    }
+    100% {
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, 
+                      rgba(255, 255, 255, 1), 
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 1),
+                      rgba(255, 255, 255, 1)) 1; 
+    }
+}
+
+.carousel {
+    width: 100%;
+    padding: 0px;
+
+}
+
+.carousel-item {
+    height: 500px;
+    background-color: #777;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 100%; 
+    object-fit: cover; 
+    width: 100%;
+}
+.ccardsmain{
+    height: 450px;
+    padding: 20px;
+    background-color: #ebebeb;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.ccardstitle{
+    text-align: center;
+}
+.ccards{
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+}
+.ccard{
+    border: #014a36 5px solid;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 250px;
+    height: 400px;
+}
+
+.ccard img{
+    border-radius: 15px;
+
+    width: 240px;
+    height: 180px;
+}
+.ccard h2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ccard p{
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cmargin{
+    margin-top: 20px;
+}
+.ctextcenter{
+    text-align: center;
+}
+.ctextleft{
+    text-align: left;
+}
+
+.ctextspan{
+    font-size: 18px;
+    color: #3be6c1;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.cicon{
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.clist{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .cnav{
+    display: none;
+  }
+  .chidemovil{
+    display: none;
+  }
+  .ctitle{
+    width: 25%;
+        justify-content: center;  
+    align-items: center; 
+  }
+  
+    .clist{
+        display: block;
+        font-size: 50px;
+        margin-right: 10px;
+
+    }   
+
+    .cnavmovil{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
