@@ -320,11 +320,36 @@ section{
 .clist{
     display: none;
 }
+.chamburgermenu{
+    position: absolute;
+    z-index: 100;
+    background-color: #014a36;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.chamburgermenu[active]{
+    display: block;
+}
+.cmenumovil{
+    list-style: none;
+    color: #fff;
+}
+.cmenumovil li{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.cmenumovil li[active]{
+  animation: border_aniamtion 0.25s forwards; 
 
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
-  }
+}
+.cfootermovil{
+    display: none;
+}
+.cbuttonwhatsapp{
+    display: none;
+}
+@media screen and (max-width: 800px) {
   .cnav{
     display: none;
   }
@@ -347,6 +372,47 @@ section{
     .cnavmovil{
         display: flex;
         justify-content: space-between;
+    }
+
+    .chamburgermenu{
+        position: absolute;
+        z-index: 100;
+        background-color: #014a36;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cfootermovil{
+
+        display: flex;
+        justify-content: space-between;
+    }
+    .cfooterdesktop{
+        display: none;
+    }
+    .ciconfooter{
+        font-size: 40px;
+    }
+    .cbuttonwhatsapp{
+        background-color: #014a36;
+        color: #ebebeb;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 6;
+        bottom: 60px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        border: solid 3px #fff;
+    }
+    .cbuttonwhatsapp a{
+        color: #ebebeb;
+    }
+    .ciconcwhatsapp{
+        font-size: 40px;
     }
 
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,24 +20,50 @@
 
     <!-- custom -->
     <link rel="stylesheet" href="style/styles.css">
+    <script >
+        window.ActualPageName = "contact";
+    </script>
     <script src="js/main.js"></script>
 
-    
 </head>
 <body>
+    <div id="hamburgerMenu" class="chamburgermenu">
+        <ul class="cmenumovil">
+            <li class="" >
+                <a class="nav-link" href="./index.html"><i class="bi bi-house cicon"></i>Inicio</a>
+            </li>
 
+            <li class="">
+                <a class="nav-link" href="./services.html"><i class="bi bi-card-list cicon"></i>Servicios</a>
+            </li>
+            <li class="">
+                <a class="nav-link" href="./who_are_we.html"><i class="bi bi-people cicon"></i>¿Quienes
+                    somos?</a>
+            </li>
+            <li class="">
+                <a class="nav-link" href="./trajectory.html"><i class="bi bi-file-earmark cicon"></i>Trayectoria</a>
+            </li>
+            <li class="">
+                <a class="nav-link" href="./donate.html"><i class="bi bi-coin cicon"></i> Donar</a>
+            </li>
+            <li class="" active>
+                <a class="nav-link" href="./contact.html"><i class="bi bi-telephone cicon"></i>Contacto</a>
+            </li>
+        </ul>
+    </div>
     <header class="container-fluid">
         <div class="row chead">
-            <div class="col-md-2 ">
-                <a class="ctitle" href="index.html"><img src="./images/logo.png"> <span>ASIREA</span></a>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
+            <div class="col-md-2 cnavmovil">
+                <a class="ctitle" href="index.html"><img src="./images/logo.png"> <span
+                        class="chidemovil">ASIREA</span></a>
+                <a id="hamburgerMenuButton" class="ctitle"><i class="bi bi-list clist"></i> </a>
+
+
             </div>
             <div class="col-md-8">
 
                 <ul class="cnav">
-                    <li class="">
+                    <li class="" active>
                         <a class="nav-link" href="./index.html"><i class="bi bi-house cicon"></i>Inicio</a>
                     </li>
 
@@ -44,15 +71,17 @@
                         <a class="nav-link" href="./services.html"><i class="bi bi-card-list cicon"></i>Servicios</a>
                     </li>
                     <li class="">
-                        <a class="nav-link" href="./who_are_we.html"><i class="bi bi-people cicon"></i>¿Quienes somos?</a>
+                        <a class="nav-link" href="./who_are_we.html"><i class="bi bi-people cicon"></i>¿Quienes
+                            somos?</a>
                     </li>
                     <li class="">
-                        <a class="nav-link" href="./trajectory.html"><i class="bi bi-file-earmark cicon" ></i>Trayectoria</a>
+                        <a class="nav-link" href="./trajectory.html"><i
+                                class="bi bi-file-earmark cicon"></i>Trayectoria</a>
                     </li>
                     <li class="">
                         <a class="nav-link" href="./donate.html"><i class="bi bi-coin cicon"></i> Donar</a>
                     </li>
-                    <li class="" active>
+                    <li class="">
                         <a class="nav-link" href="./contact.html"><i class="bi bi-telephone cicon"></i>Contacto</a>
                     </li>
                 </ul>

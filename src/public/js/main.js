@@ -1,14 +1,77 @@
 window.Main = class{
 
-    constructor(){
-        this.DivNews = document.getElementById("divNews");
+    constructor(actualPageName){
+        this.ActualPageName = actualPageName;
     }
     Build(){
         let scope = this;
-        console.log("Hola mundo");
+
+        scope.BuildHamburgerMenu();
+        scope.HamburgerMenu();
+
+        if( scope.actualPageName == "home"){
+
+        }else if(scope.actualPageName == "contact"){
+
+        }else if(scope.actualPageName == "donate"){
+
+        }else if(scope.actualPageName == "services"){
+
+        }else if(scope.actualPageName == "trajectory"){
+
+        }else if(scope.actualPageName == "whoAreWe"){
+
+        }
+
+
+    }
+
+    BuildHamburgerMenu(){
+        let scope = this;
+       scope.HamburgerMenuButton = document.getElementById("hamburgerMenuButton");
+        scope.HamburgerMenuDiv = document.getElementById("hamburgerMenu");
+    }
+
+    BuildHome(){
+        let scope = this;
+        scoep.DivNews = document.getElementById("divNews");
         scope.Carousel();
         scope.Size();
         scope.SetSize();
+    }
+    
+    BuildContact(){
+
+    }
+    
+    BuildDonate(){
+
+    }
+    
+    BuildServices(){
+
+    }
+    
+    BuildTrajectory(){
+
+    }
+    
+    BuildWhoAreWe(){
+
+    }
+    
+
+    HamburgerMenu(){
+        let scope = this;
+        scope.HamburgerMenuButton.onclick = ()=>{
+            if(scope.HamburgerMenuDiv.hasAttribute("active")){
+                scope.HamburgerMenuDiv.removeAttribute("active");
+            }else{
+                scope.HamburgerMenuDiv.setAttribute("active","active");
+            }
+
+        }
+
     }
 
     SetSize(){
@@ -48,6 +111,6 @@ window.Main = class{
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    let main = new window.Main();
+    let main = new window.Main(window.ActualPageName);
     main.Build();
 });
