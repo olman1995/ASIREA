@@ -258,7 +258,7 @@ section{
     width: 100%;
 }
 .ccardsmain{
-    height: 1000px;
+    height: 900px;
     padding: 20px;
     background-color: #ebebeb;
     overflow-x: auto;
@@ -274,7 +274,7 @@ section{
 }
 
 .ccardsmain2{
-    height: 700px;
+    height: 650px;
     padding: 20px;
     background-color: #ebebeb;
     overflow-x: auto;
@@ -476,7 +476,7 @@ section{
 .texto {
     margin-top: 2rem;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .nombre{
@@ -496,11 +496,11 @@ section{
 }
 
 #boton{
-    color: white;
+    color: #fff;
     background-color: #014a36;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 10px;
-    padding: 15px 25px;
+    padding: 10px 25px;
     font-weight:800;
     margin-bottom: 2%;
 }
@@ -508,6 +508,14 @@ section{
 #boton:hover {
     color: black;
     background-color: #3be6c1;
+}
+
+#letrabtn{
+    color: #fff
+}
+
+#letrabtn:hover{
+color: black
 }
 
 .portada_img{
