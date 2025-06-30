@@ -13,7 +13,9 @@ h1 {
 }
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1%;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
@@ -75,6 +77,7 @@ header {
 
 main{
     margin-top: 70px;
+    justify-content: center;
 }
 
 section{
@@ -262,13 +265,23 @@ section{
     overflow-y: hidden;
 }
 
-.ccardsmain2{
-    height: 500px;
+.ccardsmain3{
+    height: 850px;
     padding: 20px;
     background-color: #ebebeb;
     overflow-x: auto;
     overflow-y: hidden;
 }
+
+.ccardsmain2{
+    height: 700px;
+    padding: 20px;
+    background-color: #ebebeb;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
 
 .ccardstitle{
     text-align: center;
@@ -313,6 +326,7 @@ section{
 
 .ccard2 img{
     width: 100%;
+    border-radius: 10px;
 }
 .ccard h2{
     text-align: center;
@@ -488,6 +502,7 @@ section{
     border-radius: 10px;
     padding: 15px 25px;
     font-weight:800;
+    margin-bottom: 2%;
 }
 
 #boton:hover {
@@ -499,4 +514,8 @@ section{
     border-radius: 15px;
     width: 100%;
 
+}
+
+#card{
+  text-align: center;
 }
