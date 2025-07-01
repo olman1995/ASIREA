@@ -274,13 +274,17 @@ section{
 }
 
 .ccardsmain2{
-    height: 650px;
+   
     padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #ebebeb;
     overflow-x: auto;
     overflow-y: hidden;
 }
-
+.ccardsmain2 .cbox{
+    padding-top: 10px;
+}
 
 
 .ccardstitle{
@@ -309,7 +313,7 @@ section{
     border: #014a36 5px solid;
     background-color: #fff;
     border-radius: 20px;
-    width: 25%;
+    width: 100%;
     height: 100%;
 }
 
@@ -404,7 +408,15 @@ section{
 .cbuttonwhatsapp{
     display: none;
 }
-@media screen and (max-width: 800px) {
+.cmidle{
+    display: inline;
+}
+@media screen and (max-width: 1600px){
+    .cmidle{
+        display: none;
+    }
+}
+@media screen and (max-width: 775px) {
   .cnav{
     display: none;
   }
