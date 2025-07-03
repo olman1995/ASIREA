@@ -64,6 +64,7 @@ window.Main = class{
     HamburgerMenu(){
         let scope = this;
         scope.HamburgerMenuButton.onclick = ()=>{
+            window.scrollTo(0, 0);
             if(scope.HamburgerMenuDiv.hasAttribute("active")){
                 scope.HamburgerMenuDiv.removeAttribute("active");
             }else{
