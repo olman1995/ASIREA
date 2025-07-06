@@ -9,17 +9,17 @@ window.Main = class{
         scope.BuildHamburgerMenu();
         scope.HamburgerMenu();
 
-        if( scope.actualPageName == "home"){
+        if( scope.ActualPageName == "home"){
+            scope.BuildHome();
+        }else if(scope.ActualPageName == "contact"){
 
-        }else if(scope.actualPageName == "contact"){
+        }else if(scope.ActualPageName == "donate"){
 
-        }else if(scope.actualPageName == "donate"){
+        }else if(scope.ActualPageName == "services"){
+            scope.BuildServices();
+        }else if(scope.ActualPageName == "trajectory"){
 
-        }else if(scope.actualPageName == "services"){
-
-        }else if(scope.actualPageName == "trajectory"){
-
-        }else if(scope.actualPageName == "whoAreWe"){
+        }else if(scope.ActualPageName == "whoAreWe"){
 
         }
 
@@ -34,7 +34,7 @@ window.Main = class{
 
     BuildHome(){
         let scope = this;
-        scoep.DivNews = document.getElementById("divNews");
+        scope.DivMain = document.getElementById("divNews");
         scope.Carousel();
         scope.Size();
         scope.SetSize();
@@ -49,7 +49,11 @@ window.Main = class{
     }
     
     BuildServices(){
-
+        let scope = this;
+        scope.DivMain = document.getElementById("divActivities");
+        scope.Size();
+        scope.SetSize();
+        
     }
     
     BuildTrajectory(){
@@ -77,9 +81,21 @@ window.Main = class{
 
     SetSize(){
         let scope = this;
-        let style = "width:"+window.innerWidth+";";
-        this.DivNews.setAttribute("style",style)
+        let size = window.outerWidth-20;
+        let style = "width:"+size+"px;";
+        scope.DivMain.setAttribute("style",style);
+        let cards = scope.DivMain.querySelectorAll(".ccard");
 
+        let subSize = 375;
+        if(window.outerWidth > 750){
+            subSize = Math.round(window.outerWidth/4)-10;
+        }
+        let subStyle = "width:"+subSize+"px !important; ";
+
+        for(let i = 0; i < cards.length; i++){
+            let card = cards[i];
+            card.setAttribute("style",subStyle);
+        }
     }
     Size(){
         let scope = this;
