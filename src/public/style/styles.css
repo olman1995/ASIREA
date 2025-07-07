@@ -469,6 +469,10 @@ section {
 
 @media screen and (max-width: 775px) {
 
+    .c-image{
+       object-position: 70% 75%; 
+    }
+
     .mainHamburger {
         display: block;
         width: 100%;
@@ -586,6 +590,32 @@ section {
 }
 
 #boton:hover {
+    color: black;
+    background-color: #3be6c1;
+}
+
+.cbotoncar{
+        color: #000;
+    background-color: #fa9500;
+    font-size: 1.75rem;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 800;
+}
+.cbotoncar:hover {
+    filter: brightness(111%);
+}
+.cboton{
+    color: #fff;
+    background-color: #014a36;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+
+.cboton:hover {
     color: black;
     background-color: #3be6c1;
 }
