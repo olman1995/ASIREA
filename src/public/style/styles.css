@@ -613,11 +613,14 @@ section {
     padding: 10px 25px;
     font-weight: 800;
     margin-bottom: 2%;
+    border: 0px !important;
 }
 
 .cboton:hover {
     color: black;
     background-color: #3be6c1;
+    border: 0px !important;
+
 }
 
 #letrabtn {
