@@ -127,7 +127,3 @@ window.Main = class{
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    let main = new window.Main(window.ActualPageName);
-    main.Build();
-});
