@@ -21,7 +21,7 @@ window.Card = class {
     SizeUpdateEvent(){
         let scope = this;
         let width = window.outerWidth < window.innerWidth? window.outerWidth: window.innerWidth;
-        let height = 375;
+        let height = 425;
         let style = "width:"+width+"px; height:"+height+"px;";
         scope.Body.setAttribute("style",style);
     }
