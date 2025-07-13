@@ -332,6 +332,8 @@ section {
 }
 
 .cservices{
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 35px;
     text-align: left;
 }
