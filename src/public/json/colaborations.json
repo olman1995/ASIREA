@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Consejo Local del Agua (COLAGUA)",
+        "img": "./images/Colagua.png",
+        "text": "ASIREA es parte de Colagua, un consejo que tiene como objetivo el coordinar, recomendar y participar en la definición de políticas y programas relacionados con la conservación, el manejo, la gestión ambiental y el desarrollo productivo sostenible de los recursos de la biodiversidad, en el territorio comprendido al sur de la ruta nacional 32, de los cantones de Guácimo y Pococí. Esta zona de 485 km2, cuenta con acuíferos importantes que aportan el agua a la población y el sector productivo y empresarial, tanto en zonas altas como en las partes bajas de las cuencas que la componen. <br>Las comunidades más importantes que forman parte de este territorio son: La Unión, La Marina, La Unión, Bellavista, Buenos Aires, Suerre, La Perla de Guácimo, Colinas, Isleta y Argentina.",
+        "link": ""
+    },
+    {
+        "title": "Instituto Nacional de Innovación y Transferencia de Tecnologia Agropecuaria",
+        "img": "./images/Intaloogo.png",
+        "text": "La coordinación y colaboración con el INTA, surge de la posibilidad de que ASIREA pueda ocupar un espacio de oficina y vivero dentro de las instalaciones de la Estación Experimental Los Diamantes. Como proceso recíproco. ASIREA brinda asesoría y tramites en el proceso de producción forestal y ordenación de finca, mejorando los espacios productivos y recomendando los sitios que pueden ser dedicados a la conservación y la recuperación.",
+        "link": ""
+    },
+    {
+        "title": "Tecnológico de Costa Rica",
+        "img": "./images/TEClogo.png",
+        "text": "ASIREA cuenta con un convenio establecido con el Tecnológico de Costa Rica desde el 2022, cuyo objetivo es el establecer las bases de una cooperación recíproca, que permita la promoción y realización de actividades de interés común, tales como proyectos de investigación y extensión, trabajos finales de graduación, tesis de maestría, proyectos finales de cursos, giras de cursos, días de campo, charlas, conferencias, intercambio de información y otras que sean pertinentes y de interés para ambas instituciones.",
+        "link": ""
+    },
+    {
+        "title": "Corredor biológico Río la Suerte - Río Desenredo",
+        "img": "./images/La_suerte.png",
+        "text": "ASIREA actualmente es parte del comité que busca establecer un nuevo corredor biológico entre el río La Suerte y el río Desenredo, en el cantón de Pococí. <br> Los corredores biológicos aseguran la provisión de servicios ecosistémicos esenciales, los cuales sustentan los medios de vida y fortalecen la resiliencia de las comunidades frente al cambio climático y buscan también impulsar el desarrollo socioeconómico local, promoviendo prácticas productivas sostenibles como el ecoturismo y la agroforestería.",
+        "link": ""
+    },
+    {
+        "title": "Instituto de Desarrollo Rural",
+        "img": "./images/INDERlogo.png",
+        "text": "La colaboración con el INDER, nace de la posibilidad de que se pueda obtener financiamiento para la compra de un terreno de 2.3 ha, que pueda funcionar como centro de operaciones de ASIREA, uniendo las instalaciones de un vivero, un centro de secado y comercialización de madera, buscando aumentar el procesamiento del producto, logrando mejores precios en el proceso de comercialización, lo que se verá reflejado en el ingreso del productor. Además, se plantea un ambicioso proyecto que busca que asociados y productores locales, puedan vender sus productos en un sitio estratégico.",
+        "link": ""
+    }
+]

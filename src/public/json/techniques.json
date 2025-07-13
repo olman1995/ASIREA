@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Sustitución de palmito por especies maderables",
+        "img": "./images/IT1.png",
+        "text": "Para establecer este modelo agroforestal se utiliza una siembra ya establecida y en producción de palmito, como base para el establecimiento de un cultivo forestal. Se recomienda únicamente en aquellos casos donde el agricultor por diversos motivos, haya tomado la decisión de eliminar paulatinamente (tres años) la plantación de palmito. Este modelo trata de la sustitución paulatina de un cultivo agrícola por uno forestal.",
+        "link": "./files/Ficha 1 Palmito.pdf"
+    },
+    {
+        "title": "Cedro y/o laurel en asocio con palmito en producción",
+        "img": "./images/IT2.png",
+        "text": "En la Región Huetar Atlántica de Costa Rica existen familias productoras de palmito tanto para consumo nacional como para la exportación. El presente modelo agroforestal procura brindar una alternativa para que las familias productoras minimicen los efectos de las crisis de precio, que cíclicamente se presentan en este cultivo debido a factores externos e internos.",
+        "link": "./files/Ficha 2 Palmito Laurel.pdf"
+    },
+    {
+        "title": "Huertos familiares",
+        "img": "./images/IT3.png",
+        "text": "Los huertos familiares, son un pequeño espacio de terreno donde se siembran todo tipo de cultivos, incluyendo maderables. Están ubicados cerca de la vivienda del agricultor y le proveen toda una gama de productos básicos para el hogar y en algunos casos, parte de la producción se dedica para la venta.",
+        "link": "./files/Ficha 3 Huertos Familiares.pdf"
+    },
+    {
+        "title": "Fincas integrales",
+        "img": "./images/IT4.png",
+        "text": "La finca integral es un modelo productivo de desarrollo rural sostenible, donde se ponen en marcha todas las tecnologías, estrategias organizativas, administrativas y productivas orientadas a promover el desarrollo de la familia campesina, garantizando así la satisfacción de sus requerimientos alimenticios y laborales y el cuidado del medio ambiente y sus sistemas regenerativos.",
+        "link": "./files/Ficha 4 Fincas.pdf"
+    },
+    {
+        "title": "El Cultivo del Cacao",
+        "img": "./images/IT5.png",
+        "text": "Existen diferentes modelos para la siembra y el manejo del cultivo de cacao con respecto a la exposición a la luz solar, desde el modelo donde al cultivo se le expone completamente a la luz solar suplementado con altas dosis de fertilizantes, hasta el modelo agroforestal conocido como cacao en arboleda, en el cual se limita la radiación solar de acuerdo a la edad del cultivo y en muchos casos se le maneja de forma orgánica, sin fertilizantes ni agroquímicos sintéticos. La presente ficha se refiere al modelo de cacao en arboleda por ser el más usado en nuestro país.",
+        "link": "./files/Ficha 5 Cacao.pdf"
+    },
+    {
+        "title": "El Cultivo de la Pimienta",
+        "img": "./images/IT6.png",
+        "text": "La pimienta (Piper nigrum, L) es conocida como la reina de las especias. Representa a nivel mundial el 25% de las exportaciones de especias. Se estima que en Costa Rica existen 130 ha de pimienta, de las cuales el 60% se encuentran localizadas en Sarapiquí, el 5% en Upala, el 30% en La Tigra en San Carlos y el resto (5%) entre Cariari de Pococí y Siquirres.",
+        "link": "./files/Ficha 6 Pimienta.pdf"
+    },
+    {
+        "title": "Las cercas vivas",
+        "img": "./images/IT7.png",
+        "text": "Las cercas vivas son hileras de árboles y/o arbustos que se siembran en las fincas como soporte de los alambres de púas o lisos para dividir los diversos sectores que posee, sean estos potreros, bosques, cultivos agrícolas, etc., o bien para definir los límites de la finca. Las cercas vivas pueden estar formadas solo por postes leñosos o bien por postes muertos con postes leñosos. La cerca viva constituye una de las tecnologías agroforestales más sencillas y una de las de mayor dispersión en el continente americano.",
+        "link": "./files/Ficha 7 Cercas vivas.pdf"
+    },
+    {
+        "title": "El plátano en arboleda",
+        "img": "./images/IT8.png",
+        "text": "La siembra intensiva de plátano (Musa AAB, cv. Curraré alto) requiere hoy en día de fuertes inversiones para el combate eficiente de la sigatoka negra y de los nematodos, especialmente por el alto costo de los insumos y de la mano de obra. Los costos anteriores, unidos a los correspondientes a la aplicación de herbicidas y fertilizantes son aspectos que alejan esta alternativa de la mayoría de pequeños y medianos agricultores que cuentan con limitados recursos económicos.",
+        "link": "./files/Ficha 8 platano.pdf"
+    },
+    {
+        "title": "Sistema agroforestal en bloques",
+        "img": "./images/IT9.png",
+        "text": "El sistema agroforestal en bloque es muy concreto, basta que la finca del pequeño o mediano agricultor posea uno o más cultivos agrícolas (arroz, maíz, yuca, plátano, papaya, frijoles, etc.), o que cuente con ganado vacuno y siembre al menos una hectárea de cultivos forestales, para que la finca se transforme en un sistema agroforestal o SAF.",
+        "link": "./files/Ficha 9 SA bloques.pdf"
+    },
+    {
+        "title": "Cultivos en callejones",
+        "img": "./images/IT10.png",
+        "text": "Este sistema es también llamado cultivos en hilera y consiste en sembrar hileras de cultivos forestales con suficiente distancia como para intercalar entre los mismos cultivos agrícolas anuales y bianuales en forma permanente.",
+        "link": "./files/Ficha 10 Callejones.pdf"
+    }
+]

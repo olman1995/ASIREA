@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Protección de bosque",
+        "img": "./images/bosque_servicios_psa.png",
+        "text": "El objetivo de la actividad de Protección de Bosque es conservar y proteger los recursos naturales y a su vez preservar los servicios ambientales que estos proveen, en el marco del desarrollo sostenible.",
+        "link": "contact.html"
+    },  
+    {
+        "title": "Regeneración natural",
+        "img": "./images/regeneracion_servicios_psa.png",
+        "text": "Es una actividad que busca conservar y proteger los recursos naturales en sitios en proceso de recuperación de vegetación, tales como pastizales abandonados, charrales y tacotales y a su vez contribuye con los servicios ambientales que estos proveen.",
+        "link": "contact.html"
+    },
+    {
+        "title": "Reforestación",
+        "img": "./images/plantacion_servicios_psa.png",
+        "text": "Busca favorecer el establecimiento de plantaciones forestales con especies nativas y exóticas, ambas con fines productivos y de conservación. Dentro de esta actividad, se han creado subactividades: dependiendo de los ciclos de corta de las especies (rápido o mediano crecimiento); uso de la madera (para fabricación de embalaje); ampliada (si las empresas o grupos de interés superan las 750 ha en contratos vigentes) y con recursos propios (proyectos preestablecidos).",
+        "link": "contact.html"
+    },
+    {
+        "title": "Sistemas agroforestales",
+        "img": "./images/saf_servicios_psa.png",
+        "text": "El objetivo es establecer sistemas agrícolas o agropecuarios que incluyen árboles intercalados con cultivos y/o pastos. Estos árboles cumplen con muchos propósitos como producción (madera, leña, forraje, frutas, medicinas, otros.) además de servicios (sombra para cultivos y/o animales, protección como en el caso de cortinas rompevientos, otros.) y que contribuyen con servicios ambientales.",
+        "link": "contact.html"
+    }
+]
+

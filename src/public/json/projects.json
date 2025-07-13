@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Bio Festival ¡Celebremos la Vida!",
+        "img": "./images/biofestival.png",
+        "text": "El Biofestival es un evento cultural, ambiental y educativo cuyo objetivo principal es estimular y exigir una dinámica de vida amigable con el ambiente, además de apostar por la transformación personal y social a través de las manifestaciones artístico-culturales. ASIREA participa como coordinador del biofestival desde sus inicios hasta el 2019, convocando a organizaciones, instituciones, artistas, pequeños empresarios, entre otros, a conformar la Comisión del Biofestival, donde se proponen las ideas, se planifica, se ejecuta el Biofestival.",
+        "link": "./files/Informe Final Biofestival 2019.pdf"
+    },
+    {
+        "title": "Destino Turístico del Corredor Biológico Acuíferos: Ruta del Agua",
+        "img": "./images/ruta_agua.png",
+        "text": "Bajo el Programa Nacional Corredor Biológicos (PNCB), apoyado y asesorado por la Cooperación Alemana para el Desarrollo (GIZ por sus siglas en alemán) a través del proyecto “Implementación del PNCB en el marco de la Estrategia Nacional de Biodiversidad de Costa Rica”, ASIREA realiza un Inventario de producto turístico y propuesta de sinergias del Corredor Biológico Acuíferos: “Ruta del Agua”, apoyando la línea de turismo rural, como una propuesta de fomentar el encadenamiento entre proyectos turísticos de los cantones Guácimo y Pococí.",
+        "link": "./files/Inventario turistico, sinergias y paquetes.pdf"
+    },
+    {
+        "title": "Zona Protectora Acuíferos de Guácimo y Pococí",
+        "img": "./images/Acuiferos.png",
+        "text": "En el 2017 ASIREA, en asocio con la Comisión de Manejo y Ordenamiento de la Cuenca del Río Reventazón (COMCURE), realiza la formulación y aplicación de un Programa de Educación Ambiental con énfasis en Recurso Hídrico para la Región de Amortiguamiento de las Zonas Protectoras Acuíferos de Guácimo y Pococí, con el objetivo de formular y aplicar un Programa de Educación Ambiental con énfasis en Recurso Hídrico para las ASADAS y actores sociales en las comunidades de Isleta, Agrimaga, Milano, La Perla, La Alegría, Portón de Iberia, Buenos Aires y Argentina; de la Región de Amortiguamiento de las Zonas Protectoras Acuíferos de Guácimo, Pococí y dentro de la cuenca baja del Río Reventazón.",
+        "link": "./files/Informe final COMCURE diciembre 2017.pdf"
+    },
+    {
+        "title": "Promoción y establecimiento de mejores sistemas agroforestales",
+        "img": "./images/Fincas_integrales.png",
+        "text": "El presente documento es uno de los componentes del proyecto “Desarrollo de Modelos Agroforestales para Pequeños y Medianos Productores de la Región Huetar Atlántica de Costa Rica” financiado con fondos del Programa Ambiental Mesoamericano, administrados por el CATIE y cuya ejecución estuvo a cargo de ASIREA. <br> Las fincas corresponden principalmente a agricultores clientes de ASIREA, lo que significa que están sometidos a alguno de los diferentes sistemas de pago por servicios ambientales (PSA) o poseen interés en incorporarse a alguno de ellos. También se visitaron algunas fincas integrales o convencionales con funcionarios del MAG y el INDER.",
+        "link": "./files/MODELOS AGROFORESTALES Informre Final (FILEminimizer).pdf"
+    }
+]

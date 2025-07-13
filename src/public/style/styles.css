@@ -318,53 +318,6 @@ section {
     width: 100%;
 }
 
-.ccardsmain {
-
-    padding: 20px;
-    background-color: #ebebeb;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-
-.ccardstitle {
-    text-align: center;
-}
-
-.ccards {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.ccard {
-    flex-shrink: 0; 
-    flex-grow: 0; 
-    border: #014a36 5px solid;
-    background-color: #fff;
-    border-radius: 20px;
-    height: 100%;
-}
-
-.ccard img {
-    border-radius: 15px;
-    width: 100%;
-}
-
-
-.ccard h2 {
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.ccard p {
-    border-radius: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
 .cmargin {
     margin-top: 20px;
 }
@@ -637,3 +590,128 @@ section {
 
 }
 
+/*
+
+    card style
+
+*/
+
+.ccards{
+    background-color: #f0f0f0;
+    overflow-x: visible;
+    overflow-y: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.ccard{
+    flex-shrink: 0; 
+    flex-grow: 0; 
+    border: #014a36 5px solid;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 325px;
+    width: 300px;
+}
+.ccardhead{
+    width: 290px;
+    height: 35px;
+    color: #fff;
+    background-color: #014a36;
+    text-align: center;
+}
+.ccardbody{
+    width: 290px;
+    height: 225px;
+    background-color: #014a36;
+    text-align: center;
+
+    overflow: hidden;
+    transition: transform 0.4s ease-out;
+}
+.ccardimg{
+    width: 290px;
+    height: 225px;
+}
+.ccardtext{
+    width: 290;
+    height: 225px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    z-index: 10;
+    opacity: 0.90;
+
+}
+
+.ccardtext.animationin{
+    animation-name: ccardmovein; 
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards;
+}
+.ccardtext.animationout{
+    animation-name: ccardmoveout; 
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-in-out; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes ccardmovein {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-225px);
+
+    }
+}
+
+@keyframes ccardmoveout {
+    0%{
+        transform: translateY(-225px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
+
+.ccardfoot{
+    padding-top: 10px ;
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    background-color: #014a36;
+    text-align: center;
+}
+
+.ccarda{
+
+    text-decoration: none; 
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
+
+    border-radius: 5px;
+    background-color: #fa9500;
+    width: 150px;
+    height: 35px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.ccarda:hover{
+    filter: brightness(110%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
