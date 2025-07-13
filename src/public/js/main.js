@@ -12,9 +12,9 @@ window.Main = class {
         if (scope.ActualPageName == "home") {
             scope.BuildHome();
         } else if (scope.ActualPageName == "contact") {
-
+            scope.BuildContact();
         } else if (scope.ActualPageName == "donate") {
-
+            scope.BuildDonate();
         } else if (scope.ActualPageName == "services") {
             scope.BuildServices();
         } else if (scope.ActualPageName == "trajectory") {
@@ -44,7 +44,7 @@ window.Main = class {
 
         scope.ReadFile("/json/news.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardNews.Add(data[i],false,"",false);
+                scope.CardNews.Add(data[i], false, "", false);
             }
         });
 
@@ -55,23 +55,102 @@ window.Main = class {
     }
 
     BuildContact() {
+        let scope = this;
+        scope.BTSendContact = document.getElementById("btSendContact");
+        scope.BTSendContact.onclick = () => {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let mail = document.getElementById("mail").value;
+            let message = document.getElementById("message").value;
+
+            if (name !== "" && phone !== "" && message !== "") {
+                let data = {
+                    "name": name,
+                    "mail": mail,
+                    "phone": phone,
+                    "message":message,
+                    "type":"contact"
+                };
+                scope.SendMail("/api/sendmail", data).then((data) => {
+                    console.log(data);
+                    var dialog = new Messi('El correo se envio correctamente.Espere a que una persona se comunique con usted.', { title: 'Correo enviado.' });
+                }, () => {
+                    var dialog = new Messi(
+                        'El correo no se logro enviar.',
+                        {
+                            title: 'Fallo al enviar el correo.',
+                            titleClass: 'anim error'
+                        }
+                    );
+                })
+            } else {
+                var dialog = new Messi(
+                    'Debe llenar los datos.',
+                    {
+                        title: 'Error.',
+                        titleClass: 'anim error'
+                    }
+                );
+            }
+
+
+        };
 
     }
 
     BuildDonate() {
+        let scope = this;
+        scope.BTSendDonate = document.getElementById("btSendDonate");
+        scope.BTSendDonate.onclick = () => {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let mail = document.getElementById("mail").value;
+            let message = document.getElementById("message").value;
 
+            if (name !== "" && phone !== "" && message !== "") {
+                let data = {
+                    "name": name,
+                    "mail": mail,
+                    "phone": phone,
+                    "message":message,
+                    "type":"donate"
+                };
+                scope.SendMail("/api/sendmail", data).then((data) => {
+                    console.log(data);
+                    var dialog = new Messi('El correo se envio correctamente.Espere a que una persona se comunique con usted.', { title: 'Correo enviado.' });
+                }, () => {
+                    var dialog = new Messi(
+                        'El correo no se logro enviar.',
+                        {
+                            title: 'Fallo al enviar el correo.',
+                            titleClass: 'anim error'
+                        }
+                    );
+                })
+            } else {
+                var dialog = new Messi(
+                    'Debe llenar los datos.',
+                    {
+                        title: 'Error.',
+                        titleClass: 'anim error'
+                    }
+                );
+            }
+
+
+        };
     }
 
     BuildServices() {
         let scope = this;
-        
+
         scope.CardActivities = new window.Card("divActivities");
         scope.CardActivities.Build();
 
 
         scope.ReadFile("/json/activities.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardActivities.Add(data[i],true,"Contactar",false);
+                scope.CardActivities.Add(data[i], true, "Contactar", false);
             }
         });
         //scope.Size();
@@ -88,7 +167,7 @@ window.Main = class {
 
         scope.ReadFile("/json/thesis.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardTesis.Add(data[i],true,"Ver documento",true);
+                scope.CardTesis.Add(data[i], true, "Ver documento", true);
             }
         });
 
@@ -96,7 +175,7 @@ window.Main = class {
         scope.CardColaborations.Build();
         scope.ReadFile("/json/colaborations.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardColaborations.Add(data[i],false,"",false);
+                scope.CardColaborations.Add(data[i], false, "", false);
             }
         });
 
@@ -104,7 +183,7 @@ window.Main = class {
         scope.CardProjects.Build();
         scope.ReadFile("/json/projects.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardProjects.Add(data[i],true,"Conocer más",true);
+                scope.CardProjects.Add(data[i], true, "Conocer más", true);
             }
         });
 
@@ -112,7 +191,7 @@ window.Main = class {
         scope.CardTechniques.Build();
         scope.ReadFile("/json/techniques.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardTechniques.Add(data[i],true,"Ver documento",true);
+                scope.CardTechniques.Add(data[i], true, "Ver documento", true);
             }
         });
 
@@ -137,30 +216,31 @@ window.Main = class {
 
     }
 
-    SetSize() {
-        let scope = this;
-        let size = window.outerWidth - 20;
-        let style = "width:" + size + "px;";
-        scope.DivMain.setAttribute("style", style);
-        let cards = scope.DivMain.querySelectorAll(".ccard");
 
-        let subSize = 375;
-        if (window.outerWidth > 750) {
-            subSize = Math.round(window.outerWidth / 4) - 10;
-        }
-        let subStyle = "width:" + subSize + "px !important; ";
+    SendMail(url, data) {
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: url,
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                dataType: 'json',
+                success: function (datosRespuesta) {
+                    resolve(datosRespuesta);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    // Rechaza la promesa con un objeto de error más descriptivo
+                    reject({
+                        jqXHR: jqXHR,
+                        textStatus: textStatus,
+                        errorThrown: errorThrown,
+                        message: `Error al enviar datos: ${textStatus} - ${errorThrown || jqXHR.responseText}`
+                    });
+                }
+            });
+        });
+    }
 
-        for (let i = 0; i < cards.length; i++) {
-            let card = cards[i];
-            card.setAttribute("style", subStyle);
-        }
-    }
-    Size() {
-        let scope = this;
-        window.onresize = () => {
-            scope.SetSize();
-        }
-    }
     Carousel() {
         let scope = this;
         const myCarouselElement = document.querySelector('#carouselExampleIndicators');
@@ -169,19 +249,6 @@ window.Main = class {
             pause: false
         });
 
-        // const playPauseButton = document.getElementById('carouselPlayPause');
-        // let isPaused = false; // Estado inicial: no pausado (el carrusel se mueve)
-
-        // playPauseButton.addEventListener('click', function() {
-        // if (isPaused) {
-        //     carousel.cycle(); // Reinicia el ciclo automático
-        //     playPauseButton.textContent = 'Pausar';
-        // } else {
-        //     carousel.pause(); // Pausa el ciclo automático
-        //     playPauseButton.textContent = 'Reproducir';
-        // }
-        // isPaused = !isPaused; // Invierte el estado
-        // });
     }
 
     async ReadFile(url) {
