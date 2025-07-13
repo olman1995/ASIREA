@@ -113,7 +113,7 @@ header {
 
 
     position: fixed !important;
-    height: 70px;
+    height: 90px;
     top: 0;
     left: 0;
     width: 100%;
@@ -126,7 +126,7 @@ header {
 
 
 main {
-    margin-top: 70px;
+    margin-top: 90px;
     justify-content: center;
 }
 
@@ -164,7 +164,8 @@ section {
 }
 
 .ctitle img {
-    height: 140%;
+    height: 50px;
+    width: auto;
 }
 
 .ctitle span {

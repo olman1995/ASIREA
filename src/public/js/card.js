@@ -26,7 +26,7 @@ window.Card = class {
         scope.Body.setAttribute("style",style);
     }
 
-    Add(data){
+    Add(data,isBoton,textBoton,isTargetBlank){
         let scope = this;
         let card = document.createElement("div");
         card.classList.add("ccard");
@@ -55,12 +55,18 @@ window.Card = class {
 
         cardBody.appendChild(cardImg);
         cardBody.appendChild(cardText);
+        
+        if(isBoton){
+            let ccarda = document.createElement("a");
+            ccarda.innerHTML = textBoton;
+            ccarda.setAttribute("href",data.link);
+            if(isTargetBlank){
+                ccarda.setAttribute("target","_blank");
+            }
+            ccarda.classList.add("ccarda");
+            cardFoot.appendChild(ccarda);
+        }
 
-        let ccarda = document.createElement("a");
-        ccarda.innerHTML = "Mostrar mas";
-        ccarda.setAttribute("href",data.link);
-        ccarda.classList.add("ccarda");
-        cardFoot.appendChild(ccarda);
 
         cardBody.onmouseover = scope.MouseOverEvent();
         cardBody.onmouseout = scope.MouseOutEvent();

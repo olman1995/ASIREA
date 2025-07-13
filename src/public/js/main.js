@@ -44,7 +44,7 @@ window.Main = class {
 
         scope.ReadFile("/json/news.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardNews.Add(data[i]);
+                scope.CardNews.Add(data[i],false,"",false);
             }
         });
 
@@ -64,7 +64,16 @@ window.Main = class {
 
     BuildServices() {
         let scope = this;
-        scope.DivMain = document.getElementById("divActivities");
+        
+        scope.CardActivities = new window.Card("divActivities");
+        scope.CardActivities.Build();
+
+
+        scope.ReadFile("/json/activities.json").then((data) => {
+            for (let i = 0; i < data.length; i++) {
+                scope.CardActivities.Add(data[i],true,"Contactar",false);
+            }
+        });
         //scope.Size();
         //scope.SetSize();
 
@@ -79,7 +88,7 @@ window.Main = class {
 
         scope.ReadFile("/json/thesis.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardTesis.Add(data[i]);
+                scope.CardTesis.Add(data[i],true,"Ver documento",true);
             }
         });
 
@@ -87,7 +96,7 @@ window.Main = class {
         scope.CardColaborations.Build();
         scope.ReadFile("/json/colaborations.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardColaborations.Add(data[i]);
+                scope.CardColaborations.Add(data[i],false,"",false);
             }
         });
 
@@ -95,7 +104,7 @@ window.Main = class {
         scope.CardProjects.Build();
         scope.ReadFile("/json/projects.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardProjects.Add(data[i]);
+                scope.CardProjects.Add(data[i],true,"Conocer más",true);
             }
         });
 
@@ -103,7 +112,7 @@ window.Main = class {
         scope.CardTechniques.Build();
         scope.ReadFile("/json/techniques.json").then((data) => {
             for (let i = 0; i < data.length; i++) {
-                scope.CardTechniques.Add(data[i]);
+                scope.CardTechniques.Add(data[i],true,"Ver documento",true);
             }
         });
 
