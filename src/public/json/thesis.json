@@ -2,7 +2,7 @@
     {
         "title": "Sistema Agroforestal Familiar Integrado y de Seguridad Alimentaria y Nutricional",
         "img": "./images/LibroSAF.png",
-        "text": "This manual is the result of the experience of technicians and farmers working in the fields of agriculture, forestry, and rural development. The intention was to compile all this experience and put it into a practical, concise, flexible, and easy-to-understand manual with an illustrated summary poster. It is aimed at family farmers interested in improving their farm production, increasing food quality and diversity, and enhancing family food sovereignty. It is part of the project:'Promotion and Establishment of Improved Agroforestry Systems in the Buffer Area of the Central Volcanic Mountain Range of Talamanca', supported by the UNDP Small Grants Program.",
+        "text": "Manual que recopilar la experiencia de técnicos y agricultores de forma práctica, breve, flexible, de fácil entendimiento y con una ilustración afiche resumen. Está dirigido a agricultores familiares interesados en mejorar la producción de sus fincas y en aumentar la calidad y diversidad de alimentos así como mejorar la soberanía alimentaria familiar.",
         "link": "./files/Libro SAF.pdf"
     },
     {
@@ -14,19 +14,19 @@
     {
         "title": "Tesis",
         "img": "./images/tesis.png",
-        "text": "<b>Propuesta de un sistema de industrialización y comercialización de madera de Gmelina arborea (Melina) proveniente de plantaciones forestales de beneficiarios de ASIREA (Asociación para el Desarrollo Sostenible de la Región Atlántica).</b> <br> Tesis para optar por el grado de Licenciado de Ingeniería Forestal <br> Instituto Tecnológico de Costa Rica <br><br> Monzerrat Rivera Tenotio",
+        "text": "<b>Propuesta de un sistema de industrialización y comercialización de madera de Gmelina arborea (Melina) proveniente de plantaciones forestales de beneficiarios de ASIREA (Asociación para el Desarrollo Sostenible de la Región Atlántica).</b> <br> Monzerrat Rivera Tenotio",
         "link": "./files/Informe_Final.pdf"
     },
     {
         "title": "Tesis",
         "img": "./images/tesis3.png",
-        "text": "<b> Propuesta de oferta de productos terminados con madera de Gmelina arborea en el cliente final de la cadena de valos de ASIREA en Pococí, Limón, Costa Rica. </b> <br> Tesis para optar por el grado de Licenciado de Ingeniería Forestal <br> Instituto Tecnológico de Costa Rica <br><br> Keyla Tatiana Pereira Ramírez",
+        "text": "<b> Propuesta de oferta de productos terminados con madera de Gmelina arborea en el cliente final de la cadena de valos de ASIREA en Pococí, Limón, Costa Rica. </b> <br> Keyla Tatiana Pereira Ramírez",
         "link": "./files/propuesta_oferta_productos_terminados_madera.pdf"
     },
     {
         "title": "Tesis",
         "img": "./images/tesis2.png",
-        "text": "<b> Factores que influyen en la producción en vivero de la especie Ochroma pyramidale (Cav. ex Lam.) Urb. (balsa) en Costa Rica. </b> <br> Proyecto de graduación para optar por el grado de Licenciatura en Ingeniería en Ciencias Forestales con Énfasis en Manejo Forestal <br> Universidad Nacional de Costa Rica <br><br> Evelyn Brenes Arroyo",
+        "text": "<b> Factores que influyen en la producción en vivero de la especie Ochroma pyramidale (Cav. ex Lam.) Urb. (balsa) en Costa Rica. </b> <br> Evelyn Brenes Arroyo",
         "link": "./files/TFG_Evelyn_Brenes_Arroyo.pdf"
     }
 ]
