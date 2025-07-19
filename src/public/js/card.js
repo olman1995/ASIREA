@@ -21,7 +21,7 @@ window.Card = class {
     SizeUpdateEvent(){
         let scope = this;
         let width = window.outerWidth < window.innerWidth? window.outerWidth: window.innerWidth;
-        let height = 425;
+        let height = 500;
         let style = "width:"+width+"px; height:"+height+"px;";
         scope.Body.setAttribute("style",style);
     }
@@ -63,7 +63,11 @@ window.Card = class {
             if(isTargetBlank){
                 ccarda.setAttribute("target","_blank");
             }
+            ccarda.classList.add("btn");
+            ccarda.classList.add("btn-primary");
+            ccarda.classList.add("active");
             ccarda.classList.add("ccarda");
+
             cardFoot.appendChild(ccarda);
         }
 
