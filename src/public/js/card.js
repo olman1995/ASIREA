@@ -1,6 +1,14 @@
 window.Card = class {
     constructor(id){
         this.Body = document.getElementById(id);
+        this.ModalItem = document.getElementById("infoModal");
+        this.Modal = new bootstrap.Modal(this.ModalItem);
+
+        this.ModalP = document.getElementById("infoModalP");
+        this.ModalImage = document.getElementById("infoModalImg");
+        this.ModalTitle = document.getElementById("infoModalTitle");
+
+        this.ModalClose = document.getElementById("infoModalClose");
 
     }
 
@@ -13,9 +21,11 @@ window.Card = class {
         scope.Body.classList = [];
 
         scope.Body.classList.add("ccards");
-
+        
         scope.SizeUpdateEvent();
         scope.Event();
+
+        scope.ModalClose.onclick = scope.ClickCardShowLess();
     }
 
     SizeUpdateEvent(){
@@ -43,7 +53,25 @@ window.Card = class {
         let cardText = document.createElement("div");
 
         cardImg.setAttribute("src",data.img);
-        cardText.innerHTML = data.text;
+        let cardTextP = document.createElement("p");
+
+        cardTextP.innerHTML =  data.text.length >= 75 ?  data.text.slice(0,75)+' ...' : data.text;
+        
+        cardText.appendChild(cardTextP);
+
+        let cardTextBT = document.createElement("a"); 
+        
+        cardTextBT.innerHTML = "Mostras mas";
+
+        cardTextBT.setAttribute("data-info",JSON.stringify(data));
+
+        cardTextBT.classList.add("btn");
+        cardTextBT.classList.add("btn-primary");
+        cardTextBT.classList.add("active");
+        cardTextBT.classList.add("ccarda");
+
+        cardTextBT.onclick = scope.ClickCardShowMore();
+        cardText.appendChild(cardTextBT);
 
         cardImg.classList.add("ccardimg");
         cardText.classList.add("ccardtext");
@@ -77,10 +105,32 @@ window.Card = class {
         card.appendChild(cardHead);
         card.appendChild(cardBody);
         card.appendChild(cardFoot);
-
         scope.Body.appendChild(card);
     }
 
+    ClickCardShowLess(){
+        let scope = this;
+        return ()=>{
+            $(scope.ModalItem).modal('hide');
+        }
+    }
+    ClickCardShowMore(){
+        let scope = this;
+        return (e) =>{
+            let target = e.target;
+
+            let data =JSON.parse (target.getAttribute("data-info"));
+            console.log(data);
+            scope.ModalTitle.innerHTML = data.title;
+            scope.ModalImage.setAttribute("src", data.img);
+            scope.ModalImage.classList.add("ccardimg");
+            scope.ModalP.innerHTML =  data.text;
+                        $(scope.ModalItem).modal('show');
+
+        
+        };
+
+    }
     MouseOverEvent(){
         let scope = this;
         return (e)=>{
