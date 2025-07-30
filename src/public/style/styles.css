@@ -487,7 +487,7 @@ section {
 
 .cbotoncar {
     color: #000;
-    background-color: #fa9500;
+    background-color: #ffb209;
     font-size: 1.75rem;
     border-radius: 10px;
     padding: 10px 25px;
@@ -495,7 +495,8 @@ section {
 }
 
 .cbotoncar:hover {
-    filter: brightness(111%);
+    background-color: #fae7c2;
+
 }
 
 .cboton {
@@ -671,7 +672,7 @@ section {
     cursor: pointer;
     color: #000 !important;
 
-    background-color: #fa9500 !important;
+    background-color: #ffb209 !important;  
     width: 200px;
     height: 48px;
 
@@ -684,7 +685,7 @@ section {
 }
 
 .ccarda:hover {
-    background-color: #fadb9c !important;
+    background-color: #fae7c2 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
